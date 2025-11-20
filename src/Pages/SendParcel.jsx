@@ -10,6 +10,7 @@ const SendParcel = () => {
         register,
         handleSubmit,
         control,
+        reset
         // formState: { errors } 
     } = useForm();
     const { user } = useAuth();
@@ -79,6 +80,7 @@ const SendParcel = () => {
                                 title: "Parcel has created. Please Pay",
                                 showConfirmButton: false,
                                 timer: 2500})}
+                                reset()
                     })
             }
         });
